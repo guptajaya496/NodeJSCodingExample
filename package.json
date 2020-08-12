@@ -1,0 +1,20 @@
+{
+  "name": "nodejscodingtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api.js",
+    "server": "node index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run start\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1"
+  }
+}
